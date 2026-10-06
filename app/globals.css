@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: #101211; color: #f4f2ed; font-family: Arial, Helvetica, sans-serif; }
+::selection { background: #c7f557; color: #101211; }
+.grid-bg { background-image: linear-gradient(rgba(244,242,237,.055) 1px, transparent 1px), linear-gradient(90deg, rgba(244,242,237,.055) 1px, transparent 1px); background-size: 72px 72px; }
+.text-balance { text-wrap: balance; }
+.outline-text { -webkit-text-stroke: 1px rgba(244,242,237,.65); color: transparent; }
+.project-card { transition: transform .35s ease, border-color .35s ease; }
+.project-card:hover { transform: translateY(-6px); border-color: rgba(199,245,87,.65); }
+.project-card:hover .project-arrow { transform: translate(4px, -4px); }
+.project-arrow { transition: transform .3s ease; }
